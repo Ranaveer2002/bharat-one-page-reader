@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bharat Traders — Premium Agricultural Exports from India</title>
+  <meta name="description" content="Bharat Traders exports premium Green Cavendish Bananas and Rice from India to global markets. IEC, APEDA & FSSAI certified. Own warehouse, cold storage & farm-to-port supply chain." />
+
+  <!-- Open Graph for WhatsApp / Instagram / Social sharing -->
+  <meta property="og:title" content="Bharat Traders — Agricultural Exports from India" />
+  <meta property="og:description" content="Exporting premium Green Cavendish Bananas & Rice from India to global markets. 12+ years experience. IEC · APEDA · FSSAI certified." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thebharattraders.com" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f0ede8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 32px 16px;
+      font-family: 'DM Sans', sans-serif;
+      color: #1a1a1a;
+    }
+
+    .op-wrap {
+      width: 100%;
+      max-width: 780px;
+      border: 0.5px solid #d0d0cc;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+    }
+
+    /* ── Header ── */
+    .op-header {
+      background: linear-gradient(135deg, #1a4731 0%, #1d5a3c 100%);
+      padding: 30px 32px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .op-logo-area { display: flex; align-items: center; gap: 14px; }
+    .op-emblem {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #c9a84c;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 21px; font-weight: 700; color: #1a4731;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .op-brand { color: #fff; }
+    .op-brand h1 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; margin: 0 0 3px; }
+    .op-brand p { font-size: 11.5px; color: #9ec4ae; margin: 0; letter-spacing: 0.07em; text-transform: uppercase; }
+    .op-tagline { color: #c9a84c; font-size: 13px; font-style: italic; text-align: right; max-width: 200px; line-height: 1.55; }
+
+    /* ── Cert strip ── */
+    .op-certs {
+      background: #c9a84c;
+      padding: 8px 32px;
+      display: flex;
+      gap: 0;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .op-cert-item {
+      font-size: 10.5px; font-weight: 500; color: #1a4731;
+      display: flex; align-items: center; gap: 5px;
+      margin-right: 22px;
+    }
+    .op-cert-dot { width: 6px; height: 6px; border-radius: 50%; background: #1a4731; flex-shrink: 0; }
+
+    /* ── Hero intro ── */
+    .op-intro {
+      padding: 22px 32px 6px;
+      background: #fff;
+    }
+    .op-intro-text {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.65;
+      max-width: 620px;
+    }
+    .op-intro-text strong { color: #1a4731; font-weight: 600; }
+
+    /* ── Body ── */
+    .op-body { padding: 16px 32px 24px; background: #fff; }
+    .op-section-title {
+      font-size: 10px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: #999; margin: 0 0 12px;
+      border-bottom: 0.5px solid #e8e8e4;
+      padding-bottom: 6px;
+    }
+
+    /* ── Products ── */
+    .op-products { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 26px; }
+    .op-product-card {
+      border: 0.5px solid #e0e0dc; border-radius: 8px;
+      padding: 16px 15px 14px;
+      transition: box-shadow 0.2s;
+    }
+    .op-product-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .op-product-icon-wrap {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: #eaf3de;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; margin-bottom: 10px;
+    }
+    .op-product-name { font-size: 14px; font-weight: 600; color: #1a1a1a; margin: 0 0 3px; }
+    .op-product-sub { font-size: 11px; color: #999; margin: 0 0 10px; }
+    .op-divider { border: none; border-top: 0.5px solid #ebebeb; margin: 0 0 8px; }
+    .op-spec-row { display: flex; justify-content: space-between; font-size: 11px; color: #888; margin: 4px 0; }
+    .op-spec-row span { color: #1a1a1a; font-weight: 500; text-align: right; }
+    .op-badge {
+      display: inline-block; background: #eaf3de; color: #3b6d11;
+      font-size: 9.5px; font-weight: 500;
+      padding: 3px 8px; border-radius: 4px; margin-top: 10px;
+    }
+
+    /* ── Infrastructure strip ── */
+    .op-infra {
+      margin-bottom: 26px;
+      background: #f7f9f4;
+      border: 0.5px solid #e0e8d6;
+      border-radius: 8px;
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      text-align: center;
+    }
+    .op-infra-item .op-infra-icon { font-size: 22px; margin-bottom: 4px; }
+    .op-infra-item .op-infra-label { font-size: 11px; color: #555; line-height: 1.4; }
+    .op-infra-item .op-infra-label strong { color: #1a4731; font-weight: 600; display: block; }
+
+    /* ── Bottom grid ── */
+    .op-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .op-usp-list { list-style: none; }
+    .op-usp-list li {
+      font-size: 12px; color: #555;
+      padding: 6px 0;
+      border-bottom: 0.5px solid #ebebeb;
+      display: flex; gap: 8px; align-items: flex-start;
+      line-height: 1.45;
+    }
+    .op-usp-list li:last-child { border-bottom: none; }
+    .op-check { color: #1a4731; font-weight: 600; flex-shrink: 0; font-size: 12px; }
+
+    /* ── Contact ── */
+    .op-contact-block { font-size: 12px; }
+    .op-contact-row { display: flex; gap: 8px; margin: 6px 0; color: #555; align-items: baseline; }
+    .op-contact-label { font-weight: 600; color: #1a1a1a; min-width: 64px; font-size: 12px; }
+    .op-contact-row a { color: #1a4731; text-decoration: none; font-weight: 500; }
+    .op-contact-row a:hover { text-decoration: underline; }
+    .op-note-box {
+      margin-top: 14px; padding: 11px 13px;
+      background: #f7f7f5; border-radius: 7px;
+      font-size: 11px; color: #777; line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* ── CTA ── */
+    .op-cta {
+      padding: 0 32px 24px;
+      text-align: center;
+    }
+    .op-cta-btn {
+      display: inline-block;
+      background: #1a4731;
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 11px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: background 0.2s;
+    }
+    .op-cta-btn:hover { background: #245d3f; }
+    .op-cta-sub { font-size: 11px; color: #999; margin-top: 8px; }
+
+    /* ── Footer ── */
+    .op-footer {
+      background: #1a4731;
+      padding: 10px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .op-footer-text { font-size: 10px; color: #9ec4ae; }
+    .op-footer-text a { color: #c9a84c; text-decoration: none; font-weight: 600; }
+    .op-footer-text a:hover { text-decoration: underline; }
+    .op-footer-highlight { color: #c9a84c; font-weight: 600; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .op-products { grid-template-columns: 1fr; }
+      .op-bottom { grid-template-columns: 1fr; }
+      .op-infra { grid-template-columns: repeat(2, 1fr); }
+      .op-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .op-tagline { text-align: left; }
+      body { padding: 16px 8px; }
+    }
+  </style>
+</head>
+<body>
+<div class="op-wrap">
+
+  <!-- Header -->
+  <div class="op-header">
+    <div class="op-logo-area">
+      <div class="op-emblem">BT</div>
+      <div class="op-brand">
+        <h1>Bharat Traders</h1>
+        <p>Agricultural Exports from India</p>
+      </div>
+    </div>
+    <div class="op-tagline">Bringing India's finest produce to the world</div>
+  </div>
+
+  <!-- Certification strip -->
+  <div class="op-certs">
+    <div class="op-cert-item"><div class="op-cert-dot"></div>IEC Registered</div>
+    <div class="op-cert-item"><div class="op-cert-dot"></div>APEDA Registered</div>
+    <div class="op-cert-item"><div class="op-cert-dot"></div>FSSAI Certified</div>
+    <div class="op-cert-item"><div class="op-cert-dot"></div>Exporting from Karnataka, India</div>
+  </div>
+
+  <!-- Intro -->
+  <div class="op-intro">
+    <p class="op-intro-text">
+      <strong>Bharat Traders</strong> is a Bangalore-based agricultural export company with
+      <strong>12+ years of experience</strong> in the banana supply chain. We export premium
+      <strong>Green Cavendish Bananas</strong> and <strong>Rice</strong> from India to global markets,
+      backed by our own warehouse, cold storage, and an end-to-end supply chain from farm to port.
+    </p>
+  </div>
+
+  <!-- Body -->
+  <div class="op-body">
+    <p class="op-section-title">Our Export Products</p>
+    <div class="op-products">
+
+      <!-- Product 1: Green Cavendish Banana -->
+      <div class="op-product-card">
+        <div class="op-product-icon-wrap">🍌</div>
+        <p class="op-product-name">Green Cavendish Banana</p>
+        <p class="op-product-sub">Fresh Produce · Karnataka, India</p>
+        <hr class="op-divider"/>
+        <div class="op-spec-row">Pack size <span>13 kg carton</span></div>
+        <div class="op-spec-row">Grade <span>A / Premium</span></div>
+        <div class="op-spec-row">Supply <span>Year-round availability</span></div>
+        <div class="op-spec-row">Incoterm <span>FOB / CIF available</span></div>
+        <div class="op-badge">APEDA Certified</div>
+      </div>
+
+      <!-- Product 2: Rice -->
+      <div class="op-product-card">
+        <div class="op-product-icon-wrap">🌾</div>
+        <p class="op-product-name">Premium Indian Rice</p>
+        <p class="op-product-sub">Basmati &amp; Non-Basmati · India</p>
+        <hr class="op-divider"/>
+        <div class="op-spec-row">Packing <span>Custom (1–50 kg)</span></div>
+        <div class="op-spec-row">Varieties <span>Multiple available</span></div>
+        <div class="op-spec-row">Crop <span>Current season</span></div>
+        <div class="op-spec-row">Min order <span>1 FCL (25 MT)</span></div>
+        <div class="op-badge">FSSAI Approved</div>
+      </div>
+
+    </div>
+
+    <!-- Infrastructure -->
+    <p class="op-section-title">Our Infrastructure</p>
+    <div class="op-infra">
+      <div class="op-infra-item">
+        <div class="op-infra-icon">🏭</div>
+        <div class="op-infra-label"><strong>Own Warehouse</strong>Storage &amp; packing facility</div>
+      </div>
+      <div class="op-infra-item">
+        <div class="op-infra-icon">❄️</div>
+        <div class="op-infra-label"><strong>Cold Storage</strong>Temperature-controlled</div>
+      </div>
+      <div class="op-infra-item">
+        <div class="op-infra-icon">🚚</div>
+        <div class="op-infra-label"><strong>Farm to Port</strong>Complete supply chain</div>
+      </div>
+      <div class="op-infra-item">
+        <div class="op-infra-icon">📦</div>
+        <div class="op-infra-label"><strong>12+ Years</strong>Industry experience</div>
+      </div>
+    </div>
+
+    <!-- Bottom: USP + Contact -->
+    <div class="op-bottom">
+      <div>
+        <p class="op-section-title">Why Work With Us</p>
+        <ul class="op-usp-list">
+          <li><span class="op-check">✓</span>12+ years in banana supply — deep domain expertise</li>
+          <li><span class="op-check">✓</span>Own warehouse, cold storage &amp; farm-to-port logistics</li>
+          <li><span class="op-check">✓</span>IEC, APEDA &amp; FSSAI certified — export-ready documentation</li>
+          <li><span class="op-check">✓</span>Competitive pricing — direct sourcing, no middlemen</li>
+          <li><span class="op-check">✓</span>Flexible packing for retail &amp; wholesale buyers</li>
+          <li><span class="op-check">✓</span>Phytosanitary &amp; quality certificates per shipment</li>
+        </ul>
+      </div>
+      <div>
+        <p class="op-section-title">Contact Us</p>
+        <div class="op-contact-block">
+          <div class="op-contact-row"><span class="op-contact-label">Name</span>Ranaveer Gaikwad</div>
+          <div class="op-contact-row"><span class="op-contact-label">Company</span>Bharat Traders</div>
+          <div class="op-contact-row"><span class="op-contact-label">Email</span><a href="mailto:ranaveer@thebharattraders.com">ranaveer@thebharattraders.com</a></div>
+          <div class="op-contact-row"><span class="op-contact-label">Phone</span><a href="tel:+919731607234">+91 9731607234</a></div>
+          <div class="op-contact-row"><span class="op-contact-label">Website</span><a href="https://thebharattraders.com" target="_blank">thebharattraders.com</a></div>
+          <div class="op-contact-row"><span class="op-contact-label">Location</span>Bangalore, India</div>
+          <div class="op-contact-row"><span class="op-contact-label">IEC No.</span>EYDPR9460N</div>
+          <div class="op-note-box">We welcome inquiries for trial orders, samples, and long-term supply contracts. Quality test reports and references available on request.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="op-cta">
+    <a class="op-cta-btn" href="mailto:ranaveer@thebharattraders.com?subject=Inquiry%20—%20Bharat%20Traders">Send an Inquiry</a>
+    <p class="op-cta-sub">or WhatsApp us at <a href="https://wa.me/919731607234" style="color:#1a4731;text-decoration:none;font-weight:500;">+91 9731607234</a></p>
+  </div>
+
+  <!-- Footer -->
+  <div class="op-footer">
+    <span class="op-footer-text">Bharat Traders · Bangalore, India</span>
+    <span class="op-footer-text">Certified: <span class="op-footer-highlight">IEC · APEDA · FSSAI</span></span>
+    <span class="op-footer-text"><a href="https://thebharattraders.com">thebharattraders.com</a></span>
+  </div>
+
+</div>
+</body>
+</html>
